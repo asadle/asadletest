@@ -17,7 +17,10 @@ async def on_ready():
 async def on_message(message):
     if message.content.startswith("hi"):
         await client.send_message(message.channel, "HI")
-    
+    if message.content.startswith("아사들"):
+        await client.send_message(message.channel, "왜불러")
+        
+       
     
 access_token = os.environ["BOT_TOKEN"]
 
