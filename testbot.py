@@ -1,23 +1,24 @@
 import discord
 import os
 
+
 client = discord.Client()
 
 
 @client.event
 async def on_ready():
+    print("login")
+    print(client.user.name)
     print(client.user.id)
-    print("ready")
-
-
+    print("------------------")
+    await client.change_presence(game=discord.Game(name='', type=1))
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("123456789102345678"):
-        await message.channel.send("5")
-
-    if message.content.startswith("안녕"):
-        await message.channel.send("응 아니야.시팔")
-
+    if message.content.startswith("hi"):
+        await client.send_message(message.channel, "HI")
+    
+    
 access_token = os.environ["BOT_TOKEN"]
+
 client.run(access_token)
