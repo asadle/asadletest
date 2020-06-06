@@ -18,7 +18,7 @@ async def on_message(message):
     if message.content.startswith("코인"):
         await client.send_message(message.channel, "고유번호를 입력해 주세요")
     if message.content.startswith("카프라"):
-        await client.send_message(message.channel, "카프라는 유저의 편의를 위해 아사들이만든 노예입니다.")
+        await client.send_message(message.channel, "카프라는 코인 확인 봇 입니다")
     if message.content.startswith("12345678901234567"):
         await client.send_message(message.channel, "현재보유코인은" "3" "입니다")
     if message.content.startswith("76561198846670769"):
