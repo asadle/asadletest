@@ -15,11 +15,19 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("hi"):
-        await client.send_message(message.channel, "HI")
-    if message.content.startswith("아사들"):
-        await client.send_message(message.channel, "왜불러")
-        
+    if message.content.startswith("코인"):
+        await client.send_message(message.channel, "고유번호를 입력해 주세요")
+    if message.content.startswith("코인확인"):
+        await client.send_message(message.channel, "고유번호를 입력해 주세요")
+    if message.content.startswith("12345678901234567"):
+        await client.send_message(message.channel, "현재보유코인은" "3" "입니다")
+    if message.content.startswith("76561198846670769"):
+        await client.send_message(message.channel, "현재보유코인은" "4" "입니다")
+    if message.content.startswith("76561198840612651"):
+        await client.send_message(message.channel, "현재보유코인은" "2" "입니다")
+    if message.content.startswith("76543210987456321"):
+        await client.send_message(message.channel, "현재보유코인은" "3" "입니다")
+    
        
     
 access_token = os.environ["BOT_TOKEN"]
