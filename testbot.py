@@ -15,17 +15,17 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("코인"):
-        await client.send_message(message.channel, "고유번호를 입력해 주세요")
-    
-    if message.content.startswith("12345678901234567"):
-        await client.send_message(message.channel, "현재보유코인은" "3" "입니다")
-    if message.content.startswith("76561198846670769"):
-        await client.send_message(message.channel, "현재보유코인은" "4" "입니다")
-    if message.content.startswith("76561198840612651"):
-        await client.send_message(message.channel, "현재보유코인은" "2" "입니다")
-    if message.content.startswith("76543210987456321"):
-        await client.send_message(message.channel, "현재보유코인은" "3" "입니다")
+    if message.content.startswith("경고누적"):
+    await client.send_message(message.channel, "고유번호를 입력해 주세요")
+
+    if message.content.startswith("76561198969579722"):
+    await client.send_message(message.channel, "샌박기존경고 "3" 회 "누적" "8" "시간벤처리됨")
+    if message.content.startswith("76561199028947184 "):
+    await client.send_message(message.channel, "샌박기존지속적인 룰위반" "8" "벤처리됨")
+    if message.content.startswith("76561199060808072"):
+    await client.send_message(message.channel, "서바이벌 룰위반 경고" "1" "입니다")
+    if message.content.startswith("76561199028524034"):
+    await client.send_message(message.channel, "초식 전투 룰 위반 경고" "1" "회")
     
        
     
