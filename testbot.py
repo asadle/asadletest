@@ -15,8 +15,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith("hi"):
-        await client.send_message(message.channel, "HI")
+    if message.content.startswith("카프라"):
+        await client.send_message(message.channel, "안녕하세요.카프라입니다.")
     if message.content.startswith("아사들"):
         await client.send_message(message.channel, "왜불러")
     
