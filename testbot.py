@@ -16,7 +16,7 @@ async def on_ready():
 @client.event
 async def on_message(message):
     if message.content.startswith("카프라"):
-        await client.send_message(message.channel, "안녕하세요 카프라입니다.")
+        await client.send_message(message.channel, "안녕하세요 카프라입니다")
     if message.content.startswith("아사들"):
         await client.send_message(message.channel, "왜불러 응 아니야")
     if message.content.startswith("심심해"):
@@ -27,6 +27,10 @@ async def on_message(message):
         await client.send_message(message.channel, "응 나두안이야 메롱")
     if message.content.startswith("hi"):
         await client.send_message(message.channel, "하이 방갑다는의미로 안녕이란듯이죠 방갑습니다")
+    if message.content.startswith("안니야"):
+        await client.send_message(message.channel, "응 나두안이야 메롱")    
+    if message.content.startswith("안녕"):
+        await client.send_message(message.channel, "방가워요")
         
         
 access_token = os.environ["BOT_TOKEN"]
